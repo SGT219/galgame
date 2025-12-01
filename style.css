@@ -51,7 +51,7 @@
   font-weight: 700; 
     }
 body {
-    background-image: url('background.jpg');
+    background-image: url("background.jpg");
     background-attachment: fixed;
     background-position: center;
     background-size: cover;
@@ -723,3 +723,4 @@ body {
     }
 
 }
+
