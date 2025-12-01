@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>作品详情 - 山水人家</title>
+    <!-- 复用和主页面相同的外部资源，保证样式统一 -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdn.jsdelivr.net/npm/font-awesome@4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Ma+Shan+Zheng&family=Noto+Sans+SC:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <style>
+        /* 复用主页面的颜色变量和基础样式 */
+        :root {
+            --color-primary: #8B5A2B; /* 原木色 */
+            --color-accent: #D2691E; /* 赭石色 */
+        }
+        body {
+            background-image: url('image/background.jpg');
+            background-attachment: fixed;
+            background-position: center;
+            background-size: cover;
+            font-family: "Noto Sans SC", sans-serif;
+        }
+        .detail-container {
+            width: 80%;
+            max-width: 1000px;
+            margin: 3rem auto;
+            background-color: rgba(255, 255, 255, 0.9);
+            backdrop-filter: blur(8px);
+            border-radius: 1rem;
+            padding: 2rem;
+            box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+        }
+        .detail-title {
+            font-family: "Ma Shan Zheng", cursive;
+            color: var(--color-primary);
+            font-size: 2.5rem;
+            text-align: center;
+            margin-bottom: 1.5rem;
+        }
+        .work-img {
+            width: 100%;
+            max-height: 500px;
+            object-fit: cover;
+            border-radius: 0.5rem;
+            margin-bottom: 1.5rem;
+        }
+        .detail-info {
+            line-height: 1.8;
+            color: #333;
+        }
+        .back-link {
+            display: inline-block;
+            margin-top: 2rem;
+            color: var(--color-accent);
+            text-decoration: none;
+            font-size: 1.1rem;
+            transition: color 0.3s;
+        }
+        .back-link:hover {
+            color: var(--color-primary);
+        }
+    </style>
+</head>
+<body>
+    <div class="detail-container">
+        <h1 class="detail-title">山水人家 - 作品详情</h1>
+        <img src="./image/picture1.jpg" alt="山水人家" class="work-img">
+        <div class="detail-info">
+            <p><strong>创作者：</strong>张明轩</p>
+            <p><strong>学习时长：</strong>2年国画课程</p>
+            <p><strong>获奖情况：</strong>2025年全国青少年美术大赛少儿组金奖</p>
+            <p><strong>作品介绍：</strong>这幅《山水人家》以传统水墨技法创作，画面以江南山水为背景，融入了小桥、流水、人家的经典意象，笔墨层次丰富，色彩淡雅，体现了传统国画的意境美。作者通过1年的山水技法学习，结合自身对生活的观察，完成了这幅作品，评委评价其“用笔灵动，意境悠远，兼具传统功底与儿童的纯真视角”。</p>
+            <p><strong>指导老师：</strong>李老师（中央美术学院硕士，15年国画教学经验）</p>
+        </div>
+        <!-- 跳转回主页面作品板块的链接 -->
+        <a href="index.html#work-section" class="back-link">
+            <i class="fa fa-arrow-left mr-2"></i> 返回学员作品列表
+        </a>
+    </div>
+</body>
+</html>

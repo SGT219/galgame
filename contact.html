@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>艺绘坊 - 报名咨询</title>
+    <!-- 引入外部资源（与主页面一致） -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdn.jsdelivr.net/npm/font-awesome@4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Ma+Shan+Zheng&family=Noto+Sans+SC:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <!-- 引入本地样式文件（路径与主页面一致） -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- 导航栏（与主页面完全一致） -->
+    <nav class="navigation-bar">
+        <div class="container navigation-container">
+            <div class="navigation-content">
+                <a href="index.html" class="navigation-toggle"><img src="./image/logo.jpg" alt="logo"></a>
+                <a href="index.html" class="navigation-logo headword">艺绘坊美术辅导</a>
+             
+                <div class="desktop-navigation">
+   
+                <a href="index.html#teacher-section" class="navigation-link">师资力量</a>
+    
+                   <a href="index.html#course-section" class="navigation-link">课程类型</a>
+    
+                   <a href="index.html#award-section" class="navigation-link">获奖信息</a>
+    
+                   <a href="index.html#work-section" class="navigation-link">学员作品</a>
+    
+                   <a href="index.html#advantage-section" class="navigation-link">美术优势</a>
+    
+                   <a href="contact.html" class="navigation-link" style="color: var(--color-accent); font-weight: 700;">报名咨询</a>
+                </div>
+                
+  
+            </div>
+        </div>
+    </nav>
+
+    <!-- 报名咨询核心模块（从原页面复制而来） -->
+    <section class="content-section" style="padding-top: 120px;"> <!-- 顶部 padding 适配固定导航 -->
+        <div class="container">
+            <div class="content-card">
+                <h2 class="section-title">报名咨询</h2>
+                
+                <div class="contact-content">
+                    <!-- 地址信息 -->
+                    <div class="contact-info">
+                        <h3 class="contact-subtitle">辅导班地址</h3>
+                        <div class="address-card">
+                            <p class="address-item"><i class="fa fa-map-marker text-accent mr-2"></i> 主店：兰州市七里河区xxxx</p>
+                            <p class="address-item"><i class="fa fa-map-marker text-accent mr-2"></i> 分店：兰州市安宁区xxxxx</p>
+                            <p class="address-item"><i class="fa fa-clock-o text-accent mr-2"></i> 上课时间：请添加客服后咨询</p>
+                            <p class="address-item"><i class="fa fa-phone text-accent mr-2"></i> 咨询电话：138-XXXX-8888</p>
+                        </div>
+                        
+                        <h3 class="contact-subtitle">报名须知</h3>
+                        <ul class="notice-list">
+                            <li><i class="fa fa-star text-accent mr-2"></i> 新生首次体验课免费</li>
+                            <li><i class="fa fa-star text-accent mr-2"></i> 报名即送绘画工具套装</li>
+                            <li><i class="fa fa-star text-accent mr-2"></i> 支持按月/按季/按年缴费</li>
+                            <li><i class="fa fa-star text-accent mr-2"></i> 满8人开班，小班化教学</li>
+                            <li><i class="fa fa-star text-accent mr-2"></i> 可根据学员水平定制课程</li>
+                        </ul>
+                    </div>
+                    
+                    <!-- 二维码表单 -->
+                    <div class="contact-form-area">
+                        <h3 class="contact-subtitle">扫码添加微信咨询</h3>
+                        <div class="qrcode-card">
+                            <img src="https://picsum.photos/id/20/300/300" alt="微信二维码" class="qrcode-image">
+                            <p class="qrcode-tip">扫码添加客服微信<br>备注"美术报名"即可领取优惠</p>
+                        </div>
+                        
+                        <!-- 报名表单 -->
+                        <h3 class="contact-subtitle">在线预约体验课</h3>
+                        <form class="registration-form">
+                            <div class="form-group">
+                                <label class="form-label" for="studentName">学员姓名</label>
+                                <input type="text" id="studentName" class="form-input" placeholder="请输入学员姓名" required>
+                            </div>
+                            <div class="form-group">
+                                <label class="form-label" for="studentAge">学员年龄</label>
+                                <input type="number" id="studentAge" class="form-input" placeholder="请输入学员年龄" required>
+                            </div>
+                            <div class="form-group">
+                                <label class="form-label" for="parentPhone">联系电话</label>
+                                <input type="tel" id="parentPhone" class="form-input" placeholder="请输入家长联系电话" required>
+                            </div>
+                            <div class="form-group">
+                                <label class="form-label" for="intendedCourse">意向课程</label>
+                                <select id="intendedCourse" class="form-input" required>
+                                    <option value="">请选择意向课程</option>
+                                    <option value="国画班">国画班</option>
+                                    <option value="水彩班">水彩班</option>
+                                    <option value="油画班">油画班</option>
+                                    <option value="综合班">体验班</option>
+                                </select>
+                            </div>
+                            <button type="submit" class="form-submit-button">
+                                提交预约
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 页脚（与主页面完全一致） -->
+    <footer class="page-footer">
+        <div class="container">
+            <p class="footer-copyright">艺绘坊美术辅导 © 2025 版权所有</p>
+            <p class="footer-info">地址：XX市XX区文化西路88号艺术大厦5楼 | 咨询电话：138-XXXX-8888</p>
+            <div class="footer-social">
+                <a href="#" class="social-link"><i class="fa fa-weixin text-xl"></i></a>
+                <a href="#" class="social-link"><i class="fa fa-weibo text-xl"></i></a>
+                <a href="#" class="social-link"><i class="fa fa-qq text-xl"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- 返回顶部按钮（与主页面一致） -->
+    <button id="backToTopButton" class="back-to-top-button">
+        <i class="fa fa-arrow-up"></i>
+    </button>
+
+    <!-- JS逻辑（返回顶部+表单校验） -->
+    <script>
+        // 返回顶部按钮逻辑
+        const backToTopBtn = document.getElementById('backToTopButton');
+        
+        // 滚动显示/隐藏按钮
+        window.addEventListener('scroll', function() {
+            backToTopBtn.classList.toggle('visible', window.scrollY > 300);
+        });
+        
+        // 点击返回顶部
+        backToTopBtn.addEventListener('click', function() {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        });
+
+        // 表单提交校验
+        const form = document.querySelector('.registration-form');
+        form.addEventListener('submit', function(e) {
+            e.preventDefault(); // 阻止表单默认提交
+            
+            // 校验年龄
+            const age = document.getElementById('studentAge').value;
+            if (!age || age < 3 || age > 18) {
+                alert('请输入3-18岁之间的年龄！');
+                return;
+            }
+            
+            // 校验手机号
+            const phone = document.getElementById('parentPhone').value;
+            const phoneReg = /^1[3-9]\d{9}$/;
+            if (!phoneReg.test(phone)) {
+                alert('请输入正确的11位手机号！');
+                return;
+            }
+            
+            // 校验课程选择
+            const course = document.getElementById('intendedCourse').value;
+            if (!course) {
+                alert('请选择意向课程！');
+                return;
+            }
+            
+            // 提交成功提示
+            alert('预约提交成功！客服会尽快联系您~');
+            form.reset(); // 重置表单
+        });
+    </script>
+</body>
+</html>

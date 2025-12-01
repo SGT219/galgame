@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>艺绘坊 - 专业美术辅导招生</title>
+    <!-- 引入外部的样式和脚本 -->
+    <!-- Tailwind CSS：快速写样式用的，不用自己手写太多css -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Font Awesome：图标库，里面有各种小图标（比如眼睛、爱心这些） -->
+    <link href="https://cdn.jsdelivr.net/npm/font-awesome@4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <!-- 引入字体：马善政（艺术字）+ 思源宋体（正文），好看又适配中文 -->
+    <link href="https://fonts.googleapis.com/css2?family=Ma+Shan+Zheng&family=Noto+Sans+SC:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <!-- 本地样式文件：自己写的个性化样式都放这 -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- 导航栏：页面顶部固定的菜单，包含logo和导航链接 -->
+    <nav class="navigation-bar">
+        <div class="container navigation-container">
+            <div class="navigation-content">
+                <!-- logo区域：点击返回首页 -->
+                <a href="#" class="navigation-toggle"><img src="./image/logo.jpg" alt="logo"></a>
+                <!-- 机构名称：用了艺术字体，更有美术感 -->
+                <a href="#" class="navigation-logo headword">艺绘坊美术辅导</a>
+               
+                <div class="desktop-navigation">
+    
+                   <a href="index.html#teacher-section" class="navigation-link">师资力量</a>
+    
+                   <a href="index.html#course-section" class="navigation-link">课程类型</a>
+    
+                   <a href="index.html#award-section" class="navigation-link">获奖信息</a>
+    
+                   <a href="index.html#work-section" class="navigation-link">学员作品</a>
+    
+                   <a href="index.html#advantage-section" class="navigation-link">美术优势</a>
+    
+                   <a href="contact.html" class="navigation-link" style="color: var(--color-accent); font-weight: 700;">报名咨询</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- 页面最上方的banner区域，突出核心卖点 -->
+    <header class="hero-section">
+        <div class="container">
+            <div class="hero-card">
+                <!-- 主标题：用艺术字体，醒目 -->
+                <h1 class="hero-title">
+                    发现艺术之美 · 绘出精彩人生
+                </h1>
+                <!-- 副标题：简单介绍机构优势 -->
+                <p class="hero-description">
+                    专业美术辅导，个性化教学方案，让每个孩子都能释放艺术天赋，培养审美能力，提升创作水平
+                </p>
+                <!-- 按钮容器：居中显示报名按钮 -->
+                <div class="hero-button-container">
+                    <a href="contact.html" class="primary-button">
+                        立即咨询报名
+                    </a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- 师资力量板块：展示老师信息 -->
+    <section id="teacher-section" class="content-section">
+        <div class="container">
+            <div class="content-card">
+                <h2 class="section-title">师资力量</h2>
+                
+                <!-- 老师列表：用网格布局展示 -->
+                <div class="teacher-list">
+                    <!-- 老师1：国画专业 -->
+                    <div class="teacher-card">
+                        <img src="https://picsum.photos/id/64/200/200" alt="李老师" class="teacher-avatar">
+                        <h3 class="teacher-name">李老师 - 国画专业</h3>
+                        <p class="teacher-education">中央美术学院硕士</p>
+                        <p class="teacher-intro">15年国画教学经验，擅长山水、花鸟创作，多次获得省级美术教学奖项</p>
+                    </div>
+                    
+                    <!-- 老师2：水彩专业 -->
+                    <div class="teacher-card">
+                        <img src="https://picsum.photos/id/65/200/200" alt="张老师" class="teacher-avatar">
+                        <h3 class="teacher-name">张老师 - 水彩专业</h3>
+                        <p class="teacher-education">中国美术学院本科</p>
+                        <p class="teacher-intro">10年水彩教学经验，作品多次入选全国美展，擅长风景水彩教学</p>
+                    </div>
+                    
+                    <!-- 老师3：油画专业 -->
+                    <div class="teacher-card">
+                        <img src="https://picsum.photos/id/66/200/200" alt="王老师" class="teacher-avatar">
+                        <h3 class="teacher-name">王老师 - 油画专业</h3>
+                        <p class="teacher-education">鲁迅美术学院硕士</p>
+                        <p class="teacher-intro">12年油画教学经验，擅长人物肖像创作，培养多名学生考入知名美院</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 课程类型板块：展示不同的美术课程 -->
+    <section id="course-section" class="content-section">
+        <div class="container">
+            <div class="content-card">
+                <h2 class="section-title">课程类型</h2>
+                
+                <!-- 课程列表：网格布局，适配不同屏幕 -->
+                <div class="course-list">
+                    <!-- 国画班 -->
+                    <div class="course-card">
+                        <img src="./image/guohua.jpg" alt="国画班" class="course-image">
+                        <div class="course-content">
+                            <h3 class="course-name">国画班</h3>
+                            <ul class="course-features">
+                                <li><i class="fa fa-check text-accent mr-2"></i> 基础笔法、墨法教学</li>
+                                <li><i class="fa fa-check text-accent mr-2"></i> 山水、花鸟、人物创作</li>
+                                <li><i class="fa fa-check text-accent mr-2"></i> 宣纸、毛笔等工具使用</li>
+                                <li><i class="fa fa-check text-accent mr-2"></i> 适合8岁以上学员</li>
+                            </ul>
+                            <p class="course-info">课时：60分钟/节 | 班型：8人小班</p>
+                        </div>
+                    </div>
+                    
+                    <!-- 水彩班 -->
+                    <div class="course-card">
+                        <img src="./image/shuisai.jpg" alt="水彩班" class="course-image">
+                        <div class="course-content">
+                            <h3 class="course-name">水彩班</h3>
+                            <ul class="course-features">
+                                <li><i class="fa fa-check text-accent mr-2"></i> 色彩理论基础教学</li>
+                                <li><i class="fa fa-check text-accent mr-2"></i> 干湿画法技巧训练</li>
+                                <li><i class="fa fa-check text-accent mr-2"></i> 风景、静物水彩创作</li>
+                                <li><i class="fa fa-check text-accent mr-2"></i> 适合7岁以上学员</li>
+                            </ul>
+                            <p class="course-info">课时：60分钟/节 | 班型：8人小班</p>
+                        </div>
+                    </div>
+                    
+                    <!-- 油画班 -->
+                    <div class="course-card">
+                        <img src="./image/youhua.jpeg" alt="油画班" class="course-image">
+                        <div class="course-content">
+                            <h3 class="course-name">油画班</h3>
+                            <ul class="course-features">
+                                <li><i class="fa fa-check text-accent mr-2"></i> 油画颜料调和技巧</li>
+                                <li><i class="fa fa-check text-accent mr-2"></i> 画布处理与打底</li>
+                                <li><i class="fa fa-check text-accent mr-2"></i> 人物、静物油画创作</li>
+                                <li><i class="fa fa-check text-accent mr-2"></i> 适合10岁以上学员</li>
+                            </ul>
+                            <p class="course-info">课时：90分钟/节 | 班型：6人小班</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 获奖信息板块：展示学员和机构的获奖情况 -->
+    <section id="award-section" class="content-section">
+        <div class="container">
+            <div class="content-card">
+                <h2 class="section-title">近期获奖信息</h2>
+                
+                <!-- 获奖列表：纵向排列，适配移动端 -->
+                <div class="award-list">
+                    <!-- 奖项1：2025全国青少年美术大赛 -->
+                    <div class="award-card">
+                        <div class="award-year">
+                            <span class="year-tag">2025年</span>
+                        </div>
+                        <div class="award-content">
+                            <h3 class="award-name">全国青少年美术大赛</h3>
+                            <p class="award-desc">我班学员张明轩的国画作品《山水人家》获得少儿组金奖，李小雨的水彩作品《晨曦》获得银奖，辅导班获得"优秀组织单位"称号</p>
+                        </div>
+                    </div>
+                    
+                    <!-- 奖项2：2025省级美术作品展 -->
+                    <div class="award-card">
+                        <div class="award-year">
+                            <span class="year-tag">2025年</span>
+                        </div>
+                        <div class="award-content">
+                            <h3 class="award-name">省级中小学生美术作品展</h3>
+                            <p class="award-desc">共有8名学员作品入选展览，其中王浩宇的油画《城市印象》获得一等奖，辅导班李老师获得"优秀指导教师"荣誉</p>
+                        </div>
+                    </div>
+                    
+                    <!-- 奖项3：2024市书画大赛 -->
+                    <div class="award-card">
+                        <div class="award-year">
+                            <span class="year-tag">2024年</span>
+                        </div>
+                        <div class="award-content">
+                            <h3 class="award-name">市青少年书画大赛</h3>
+                            <p class="award-desc">我辅导班选送的15幅作品全部获奖，其中金奖3名，银奖5名，铜奖7名，总成绩位列全市第一</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 学员作品板块：3D翻转卡片展示作品和创作者信息 -->
+    <section id="work-section" class="content-section">
+        <div class="container">
+            <div class="content-card">
+                <h2 class="section-title">学员优秀作品</h2>
+                <p class="work-tip">点击/hover作品查看创作者信息</p>
+                
+                <!-- 作品列表：网格布局，hover翻转卡片 -->
+                <div class="work-list">
+                    <!-- 作品1：山水人家（国画） -->
+                    <div class="work-card">
+                        <div class="work-card-inner">
+                            <div class="work-card-front">
+                               <a href="./shanshui.html"><img src="./image/picture1.jpg" alt="国画作品" class="work-image"></a> 
+                            </div>
+                            <div class="work-card-back">
+                                <h3 class="work-name">山水人家</h3>
+                                <p class="creator-name">创作者：张明轩</p>
+                                <p class="study-duration">学习时长：2年</p>
+                                <p class="course-type">课程类型：国画班</p>
+                                <p class="work-award">获奖：全国青少年美术大赛金奖</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- 作品2：晨曦（水彩） -->
+                    <div class="work-card">
+                        <div class="work-card-inner">
+                            <div class="work-card-front">
+                                <img src="./image/picture2.jpg" alt="水彩作品" class="work-image">
+                            </div>
+                            <div class="work-card-back">
+                                <h3 class="work-name">晨曦</h3>
+                                <p class="creator-name">创作者：李小雨</p>
+                                <p class="study-duration">学习时长：1年半</p>
+                                <p class="course-type">课程类型：水彩班</p>
+                                <p class="work-award">获奖：全国青少年美术大赛银奖</p>
+                            </div>
+                        </div>
+                    </div> 
+                    <!-- 作品3：城市印象（油画） -->
+                    <div class="work-card">
+                        <div class="work-card-inner">
+                            <div class="work-card-front">
+                                <img src="./image/picture3.jpg" alt="油画作品" class="work-image">
+                            </div>
+                            <div class="work-card-back">
+                                <h3 class="work-name">城市印象</h3>
+                                <p class="creator-name">创作者：王浩宇</p>
+                                <p class="study-duration">学习时长：3年</p>
+                                <p class="course-type">课程类型：油画班</p>
+                                <p class="work-award">获奖：省级美术作品展一等奖</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- 作品4：花鸟图（国画） -->
+                    <div class="work-card">
+                        <div class="work-card-inner">
+                            <div class="work-card-front">
+                                <img src="./image/picture4.jpg" alt="国画作品" class="work-image">
+                            </div>
+                            <div class="work-card-back">
+                                <h3 class="work-name">花鸟图</h3>
+                                <p class="creator-name">创作者：陈一诺</p>
+                                <p class="study-duration">学习时长：1年</p>
+                                <p class="course-type">课程类型：国画班</p>
+                                <p class="work-award">获奖：市青少年书画大赛银奖</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- 作品5：海边（水彩） -->
+                    <div class="work-card">
+                        <div class="work-card-inner">
+                            <div class="work-card-front">
+                                <img src="./image/picture5.jpg" alt="水彩作品" class="work-image">
+                            </div>
+                            <div class="work-card-back">
+                                <h3 class="work-name">海边</h3>
+                                <p class="creator-name">创作者：赵思语</p>
+                                <p class="study-duration">学习时长：8个月</p>
+                                <p class="course-type">课程类型：水彩班</p>
+                                <p class="work-award">获奖：市青少年书画大赛铜奖</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- 作品6：静物（油画） -->
+                    <div class="work-card">
+                        <div class="work-card-inner">
+                            <div class="work-card-front">
+                                <img src="./image/picture6.jpg" alt="油画作品" class="work-image">
+                            </div>
+                            <div class="work-card-back">
+                                <h3 class="work-name">静物</h3>
+                                <p class="creator-name">创作者：刘子轩</p>
+                                <p class="study-duration">学习时长：2年半</p>
+                                <p class="course-type">课程类型：油画班</p>
+                                <p class="work-award">获奖：市青少年书画大赛金奖</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 美术优势板块：说明学美术的好处 -->
+    <section id="advantage-section" class="content-section">
+        <div class="container">
+            <div class="content-card">
+                <h2 class="section-title">学习美术的优势</h2>
+                
+                <!-- 优势列表：网格布局，配图标更直观 -->
+                <div class="advantage-list">
+                    <!-- 优势1：提升创造力 -->
+                    <div class="advantage-card">
+                        <div class="advantage-icon">
+                            <i class="fa fa-brain text-white text-2xl"></i>
+                        </div>
+                        <h3 class="advantage-name">提升创造力</h3>
+                        <p class="advantage-desc">美术创作能够激发想象力和创造力，培养创新思维，让孩子学会用不同角度看待问题</p>
+                    </div>
+                    
+                    <!-- 优势2：培养审美能力 -->
+                    <div class="advantage-card">
+                        <div class="advantage-icon">
+                            <i class="fa fa-eye text-white text-2xl"></i>
+                        </div>
+                        <h3 class="advantage-name">培养审美能力</h3>
+                        <p class="advantage-desc">通过美术学习，提升色彩感知、构图理解和审美鉴赏能力，丰富精神世界</p>
+                    </div>
+                    
+                    <!-- 优势3：陶冶情操 -->
+                    <div class="advantage-card">
+                        <div class="advantage-icon">
+                            <i class="fa fa-heart text-white text-2xl"></i>
+                        </div>
+                        <h3 class="advantage-name">陶冶情操</h3>
+                        <p class="advantage-desc">美术创作能够舒缓压力，调节情绪，培养耐心和专注力，提升心理素质</p>
+                    </div>
+                    
+                    <!-- 优势4：锻炼动手能力 -->
+                    <div class="advantage-card">
+                        <div class="advantage-icon">
+                            <i class="fa fa-hand-paper-o text-white text-2xl"></i>
+                        </div>
+                        <h3 class="advantage-name">锻炼动手能力</h3>
+                        <p class="advantage-desc">绘画过程需要精细的手部动作，能够锻炼手眼协调能力和精细动作发展</p>
+                    </div>
+                    
+                    <!-- 优势5：升学加分 -->
+                    <div class="advantage-card">
+                        <div class="advantage-icon">
+                            <i class="fa fa-graduation-cap text-white text-2xl"></i>
+                        </div>
+                        <h3 class="advantage-name">升学加分</h3>
+                        <p class="advantage-desc">美术特长可为中高考艺术特长生加分，也为未来艺术专业发展打下基础</p>
+                    </div>
+                    
+                    <!-- 优势6：增强表达能力 -->
+                    <div class="advantage-card">
+                        <div class="advantage-icon">
+                            <i class="fa fa-users text-white text-2xl"></i>
+                        </div>
+                        <h3 class="advantage-name">增强表达能力</h3>
+                        <p class="advantage-desc">通过绘画表达内心想法，提升视觉表达能力，增强自信心和沟通能力</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 页脚：版权、地址、社交账号 -->
+    <footer class="page-footer">
+        <div class="container">
+            <p class="footer-copyright">艺绘坊美术辅导 © 2025 版权所有</p>
+            <p class="footer-info">地址：XX市XX区文化西路88号艺术大厦5楼 | 咨询电话：138-XXXX-8888</p>
+            <div class="footer-social">
+                <a href="#" class="social-link"><i class="fa fa-weixin text-xl"></i></a>
+                <a href="#" class="social-link"><i class="fa fa-weibo text-xl"></i></a>
+                <a href="#" class="social-link"><i class="fa fa-qq text-xl"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- 返回顶部按钮：滚动页面后显示，点击回到顶部 -->
+    <button id="backToTopButton" class="back-to-top-button">
+        <i class="fa fa-arrow-up"></i>
+    </button>
+
+    <!-- JS脚本：主要处理返回顶部按钮 -->
+    <script>
+        // 获取返回顶部按钮
+        const backToTopBtn = document.getElementById('backToTopButton');
+        
+        // 滚动页面时，判断是否显示按钮（滚动超过300px就显示）
+        window.addEventListener('scroll', function() {
+            if (window.scrollY > 300) {
+                backToTopBtn.style.display = 'block';
+            } else {
+                backToTopBtn.style.display = 'none';
+            }
+        });
+        
+        // 点击按钮平滑回到顶部
+        backToTopBtn.addEventListener('click', function() {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth' // 平滑滚动，不是一下子跳上去
+            });
+        });
+    </script>
+</body>
+</html>
